@@ -1,0 +1,33 @@
+{
+  "name": "sagblog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blooize/SAGBlog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blooize/SAGBlog/issues"
+  },
+  "homepage": "https://github.com/blooize/SAGBlog#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "next": "^10.0.9",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "gray-matter": "^4.0.2",
+    "js-yaml": "^4.0.0",
+    "marked": "^2.0.1",
+    "raw-loader": "^4.0.2"
+  }
+}
