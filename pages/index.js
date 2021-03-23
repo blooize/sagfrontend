@@ -5,18 +5,29 @@ import { getConfig, getAllPosts } from '@api'
 export default function Blog(props){
     return (
         <DefaultLayout title={props.title} description={props.description}>
-            <p>List of posts:</p>
-            <ul>
-                {props.posts.map(function(post, idx){
-                    return (
-                        <li key={idx}>
-                            <Link href={'/posts/'+post.slug}>
-                                <a>{post.title}</a>
-                            </Link>
-                        </li>
-                    )
-                })}
-            </ul>
+        <section className="body-font overflow-hidden">
+            <div className="container px-5 py-24 mx-auto">
+                <h1 className="text-3xl font-bold mb-10">List of posts:</h1>
+                    <ul>
+                        {props.posts.map(function(post, idx){
+                            return (
+                                <li className="text-xl my-10" key={idx}>
+                                    <div>
+                                        <a>{post.title}</a>
+                                        <br/>
+                                        <Link href={'/posts/'+post.slug}>
+                                            <a className="text-sm text-blue-500 inline-flex items-center mt-4">Read about it -></a>
+                                        </Link>
+                                    </div>
+
+                                </li>
+                            )
+                        })}
+                    </ul>
+            </div>
+        </section>
+
+
         </DefaultLayout>
     )
 } 
