@@ -1,3 +1,3 @@
-export default function Footer(){
-    return <footer><p>©2021 | Simon Schmitt</p></footer>
-}
+export default function Footer() {
+    return <footer><p>©2020 | Footer</p></footer>
+  }

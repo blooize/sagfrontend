@@ -1,18 +1,23 @@
 import Head from 'next/head'
-import Header from '@includes/header'
 import Footer from '@includes/footer'
+import { Navbar } from '../components/Navbar'
+
 
 export default function DefaultLayout(props){
     return (
         <main>
-            <Head>
-                <title>{props.title}</title>
-                <meta name="description" content={props.description}></meta>
-            </Head>
-            <Header>
+            <div className="bg-blue-400">
+                <Head>
+                    <title>{props.title}</title>
+                    <meta name='description' content={props.description}/>
+                    <link rel='icon' href='/favicon.ico' />
+                    <link rel='stylesheet' href='/style.css'/>
+                </Head>
+                <Navbar/>
                 {props.children}
-            </Header>
-            <Footer/>
+                <Footer/>
+            </div>
+
         </main>
     )
 }
