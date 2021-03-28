@@ -19,6 +19,11 @@ export const Navbar = () => {
                 Imprint
               </a>
             </Link>
+            <Link href='/privacy'>
+              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded font-bold items-center justify-center hover:bg-gray-200 hover:text-black'>
+                Privacy
+              </a>
+            </Link>
             <Link href='/'>
               <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded font-bold items-center justify-center hover:bg-gray-200 hover:text-black'>
                 About us
